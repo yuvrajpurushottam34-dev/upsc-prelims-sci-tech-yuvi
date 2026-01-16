@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UPSC Prelims Sci & Tech CBT (2014–2025)</title>
+  <style>
+    body{font-family:Arial, sans-serif; margin:0; background:#0f0f10; color:#fff;}
+    .wrap{max-width:1000px; margin:0 auto; padding:24px;}
+    h1{font-size:22px; margin:0 0 8px;}
+    p{opacity:.85; margin:0 0 16px;}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:12px;}
+    .card{background:#1b1b1f; border:1px solid #2a2a31; border-radius:12px; padding:16px; cursor:pointer;}
+    .card:hover{border-color:#4a4a57;}
+    .small{font-size:12px; opacity:.75; margin-top:8px;}
+    .topbar{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
+    .pill{background:#22222a; border:1px solid #2a2a31; padding:6px 10px; border-radius:999px; font-size:12px; opacity:.9;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>UPSC Prelims Sci & Tech CBT (2014–2025)</h1>
+        <p>Select a 25-question test set.</p>
+      </div>
+      <div class="pill" id="meta"></div>
+    </div>
+
+    <div class="grid" id="tests"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

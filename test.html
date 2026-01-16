@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CBT Test</title>
+  <style>
+    body{font-family:Arial, sans-serif; margin:0; background:#0f0f10; color:#fff;}
+    .wrap{max-width:900px; margin:0 auto; padding:24px;}
+    .box{background:#1b1b1f; border:1px solid #2a2a31; border-radius:12px; padding:16px;}
+    .row{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center;}
+    .q{font-size:18px; margin:12px 0;}
+    .opt{display:block; padding:10px; border-radius:10px; border:1px solid #2a2a31; margin:8px 0; cursor:pointer;}
+    .opt:hover{border-color:#4a4a57;}
+    button{padding:10px 14px; border-radius:10px; border:0; cursor:pointer;}
+    .btn{background:#4CAF50; color:#fff;}
+    .btn2{background:#2a2a31; color:#fff;}
+    .muted{opacity:.8;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="row">
+      <div class="muted" id="crumb"></div>
+      <div class="muted" id="progress"></div>
+    </div>
+
+    <div class="box" id="stage">
+      <div class="q" id="question"></div>
+      <div id="options"></div>
+
+      <div class="row" style="margin-top:12px;">
+        <button class="btn2" id="prevBtn">Previous</button>
+        <button class="btn" id="nextBtn">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
